@@ -1,0 +1,8 @@
+file_format: "1"
+id: pmw3610_xiao
+name: pmw3610_xiao
+type: shield
+url: https://github.com/kumamuk-git/zmk-config-pmw3610-xiao
+requires: [seeeduino_xiao_ble]
+features:
+  - keys

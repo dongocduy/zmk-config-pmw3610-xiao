@@ -1,0 +1,35 @@
+#include <physical_layouts.dtsi>
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+
+    matrix_transform0: matrix_transform0 {
+        compatible = "zmk,matrix-transform";
+        rows = <0>;
+        columns = <0>;
+        map = <>;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <>;
+    };
+
+    physical_layout0: physical_layout0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Trackball Only";
+        kscan = <&kscan0>;
+        transform = <&matrix_transform0>;
+    };
+};

@@ -1,0 +1,6 @@
+if SHIELD_PMW3610_XIAO
+
+config ZMK_KEYBOARD_NAME
+    default "PMW3610_XIAO"
+
+endif
