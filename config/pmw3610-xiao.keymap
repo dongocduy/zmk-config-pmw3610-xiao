@@ -17,6 +17,8 @@
                 &kp ENTER    /* Pin 0.11 - Nút 7 */
                 &kp ESC      /* Pin 0.05 - Nút 8 */
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
