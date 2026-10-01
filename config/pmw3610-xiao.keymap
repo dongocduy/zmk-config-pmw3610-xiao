@@ -1,12 +1,23 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            
-            bindings = <&none>;
+            bindings = <
+                &mkp LCLK    /* Pin 0.02 - Nút 1: Chuột trái */
+                &mkp RCLK    /* Pin 0.16 - Nút 2: Chuột phải */
+                &mkp MCLK    /* Pin 0.28 - Nút 3: Chuột giữa */
+                &mkp MB4     /* Pin 0.03 - Nút 4: Nút Back */
+                &mkp MB5     /* Pin 0.04 - Nút 5: Nút Forward */
+                &kp SPACE    /* Pin 0.29 - Nút 6 */
+                &kp ENTER    /* Pin 0.11 - Nút 7 */
+                &kp ESC      /* Pin 0.05 - Nút 8 */
+            >;
         };
     };
 };
+
