@@ -8,14 +8,14 @@
 
         default_layer {
             bindings = <
-                &mkp LCLK    /* Pin 0.02 - Nút 1: Chuột trái */
-                &mkp RCLK    /* Pin 0.16 - Nút 2: Chuột phải */
-                &mkp MCLK    /* Pin 0.28 - Nút 3: Chuột giữa */
-                &mkp MB4     /* Pin 0.03 - Nút 4: Nút Back */
-                &mkp MB5     /* Pin 0.04 - Nút 5: Nút Forward */
-                &kp SPACE    /* Pin 0.29 - Nút 6 */
-                &kp ENTER    /* Pin 0.11 - Nút 7 */
-                &kp ESC      /* Pin 0.05 - Nút 8 */
+                &kp A    /* Pin 0.02 - Nút 1: Chuột trái */
+                &kp B    /* Pin 0.16 - Nút 2: Chuột phải */
+                &kp C    /* Pin 0.28 - Nút 3: Chuột giữa */
+                &kp D     /* Pin 0.03 - Nút 4: Nút Back */
+                &kp E     /* Pin 0.04 - Nút 5: Nút Forward */
+                &kp F    /* Pin 0.29 - Nút 6 */
+                &kp G    /* Pin 0.11 - Nút 7 */
+                &kp H      /* Pin 0.05 - Nút 8 */
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
