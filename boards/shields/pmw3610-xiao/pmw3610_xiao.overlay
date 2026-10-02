@@ -37,7 +37,7 @@
         irq-gpios = <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <600>;
         // swap-xy;
-        // invert-x; /* optional */
+        invert-x;
         // invert-y; /* optional */
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
