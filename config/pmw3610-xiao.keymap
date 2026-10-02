@@ -14,7 +14,7 @@
                 &kp D     /* Pin 0.03 - Nút 4: Nút Back */
                 &kp E     /* Pin 0.04 - Nút 5: Nút Forward */
                 &kp F    /* Pin 0.29 - Nút 6 */
-                &kp G    /* Pin 0.11 - Nút 7 */
+                &kp G    /* Pin 1.11 - Nút 7 */
                 &kp H      /* Pin 0.05 - Nút 8 */
             >;
 
