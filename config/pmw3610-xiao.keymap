@@ -32,6 +32,48 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+        m1_layer {
+            bindings = <
+                &kp A    /* Pin 0.02 - Nút 1: Chuột trái */
+                &kp B    /* Pin 0.16 - Nút 2: Chuột phải */
+                &kp C    /* Pin 0.28 - Nút 3: Chuột giữa */
+                &kp D     /* Pin 0.03 - Nút 4: Nút Back */
+                &kp E     /* Pin 0.04 - Nút 5: Nút Forward */
+                &kp F    /* Pin 0.29 - Nút 6 */
+                &kp G    /* Pin 1.11 - Nút 7 */
+                &kp H      /* Pin 0.05 - Nút 8 */
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+        m2_layer {
+            bindings = <
+                &kp A    /* Pin 0.02 - Nút 1: Chuột trái */
+                &kp B    /* Pin 0.16 - Nút 2: Chuột phải */
+                &kp C    /* Pin 0.28 - Nút 3: Chuột giữa */
+                &kp D     /* Pin 0.03 - Nút 4: Nút Back */
+                &kp E     /* Pin 0.04 - Nút 5: Nút Forward */
+                &kp F    /* Pin 0.29 - Nút 6 */
+                &kp G    /* Pin 1.11 - Nút 7 */
+                &kp H      /* Pin 0.05 - Nút 8 */
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+        m3_layer {
+            bindings = <
+                &kp A    /* Pin 0.02 - Nút 1: Chuột trái */
+                &kp B    /* Pin 0.16 - Nút 2: Chuột phải */
+                &kp C    /* Pin 0.28 - Nút 3: Chuột giữa */
+                &kp D     /* Pin 0.03 - Nút 4: Nút Back */
+                &kp E     /* Pin 0.04 - Nút 5: Nút Forward */
+                &kp F    /* Pin 0.29 - Nút 6 */
+                &kp G    /* Pin 1.11 - Nút 7 */
+                &kp H      /* Pin 0.05 - Nút 8 */
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
     };
 };
 
