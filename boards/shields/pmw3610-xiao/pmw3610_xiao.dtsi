@@ -39,10 +39,21 @@
 
     physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
-        display-name = "Trackball with 8 Keys";
+        display-name = "Default";
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
+        keys = <
+            <&key_physical_attrs 120  60  90  20 0 0 0>  /* Key 0: 0.02 (Top Center) */
+            <&key_physical_attrs 120  60  90 100 0 0 0>  /* Key 1: 0.16 (Upper Center) */
+            <&key_physical_attrs 110 160  20 180 0 0 0>  /* Key 2: 0.28 (Upper Left) */
+            <&key_physical_attrs 110 160 170 180 0 0 0>  /* Key 3: 0.03 (Upper Right) */
+            <&key_physical_attrs 110 160  20 520 0 0 0>  /* Key 4: 0.04 (Lower Left) */
+            <&key_physical_attrs 110 160 170 520 0 0 0>  /* Key 5: 0.29 (Lower Right) */
+            <&key_physical_attrs 110  60  20 700 0 0 0>  /* Key 6: 1.11 (Bottom Left) */
+            <&key_physical_attrs 110  60 170 700 0 0 0>  /* Key 7: 0.05 (Bottom Right) */
+        >;
     };
+
 
     encoder: encoder {
         compatible = "alps,ec11";
