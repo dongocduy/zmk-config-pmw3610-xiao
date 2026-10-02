@@ -6,3 +6,7 @@ url: https://github.com/kumamuk-git/zmk-config-pmw3610-xiao
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
+  - encoder
+  - pointer
+
