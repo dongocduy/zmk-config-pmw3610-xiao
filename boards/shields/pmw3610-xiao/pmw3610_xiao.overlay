@@ -43,10 +43,12 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        // force-awake; /* optional */
-        /* keep the sensor awake while ZMK activity state is ACTIVE,
-           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
-           thus, the sensor would be a `wakeup-source` */
+        /* Cấp nguồn từ 3.3V cố định nên sensor vẫn có điện trong sleep.
+           Thêm wakeup-source để IRQ pin có thể wakeup board khi trackball di chuyển. */
+        wakeup-source;
+
+        force-awake; /* Giữ sensor ở chế độ awake khi ZMK active,
+                        tránh sensor rơi vào downshift mode sau wakeup */
 
         // force-awake-4ms-mode; /* optional */
         /* while force-awake is acitvated, enable this mode to force sampling per 
