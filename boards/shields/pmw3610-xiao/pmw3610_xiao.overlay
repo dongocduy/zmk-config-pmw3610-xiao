@@ -1,15 +1,5 @@
 #include "pmw3610_xiao.dtsi"
 
-/ {
-    pmw3610_reset: pmw3610_reset {
-        compatible = "gpio-leds";
-        nreset_pin: nreset_pin {
-            gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
-            label = "PMW3610 NRESET";
-        };
-    };
-};
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
